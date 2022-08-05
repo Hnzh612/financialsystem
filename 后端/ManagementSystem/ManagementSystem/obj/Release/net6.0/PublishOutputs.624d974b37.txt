@@ -12,6 +12,7 @@ D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\K
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\K4os.Hash.xxHash.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.Sqlite.dll
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.PlatformAbstractions.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.Identity.Client.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
@@ -74,3 +75,13 @@ D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\r
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyController.dll
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyModel.dll
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyServices.dll
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyController.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyController.xml
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyModel.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyModel.xml
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyServices.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\hxjyServices.xml
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\PubTmp\Out\ManagementSystem.xml

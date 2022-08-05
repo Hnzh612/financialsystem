@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 // 导入element-ui组件库
 import ElementUI from 'element-ui'
+import axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css'
 // 导入样式
 import '@/css/index.css'

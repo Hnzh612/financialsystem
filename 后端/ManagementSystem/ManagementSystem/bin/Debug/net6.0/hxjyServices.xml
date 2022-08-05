@@ -9,6 +9,13 @@
              数据库连接字符
              </summary>
         </member>
+        <member name="M:hxjyServices.Userservice.Login(System.String)">
+            <summary>
+             登录
+             </summary>
+             <param name="username"></param>
+             <returns></returns>
+        </member>
         <member name="M:hxjyServices.Userservice.AddUser(hxjyModel.User)">
             <summary>
              添加用户

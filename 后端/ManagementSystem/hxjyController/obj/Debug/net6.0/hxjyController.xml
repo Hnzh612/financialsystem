@@ -9,6 +9,13 @@
             用户接口
             </summary>
         </member>
+        <member name="M:hxjyController.UserController.Login(System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
         <member name="M:hxjyController.UserController.getUserInfoById(System.Int32)">
             <summary>
             根据id获取用户

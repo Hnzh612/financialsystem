@@ -90,3 +90,15 @@ D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\refint\Manag
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\ManagementSystem.pdb
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\ManagementSystem.genruntimeconfig.cache
 D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\ref\ManagementSystem.dll
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\ManagementSystem.xml
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyController.dll
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyModel.dll
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyServices.dll
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyController.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyController.xml
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyModel.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyModel.xml
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyServices.pdb
+D:\test\后端\ManagementSystem\ManagementSystem\bin\Release\net6.0\hxjyServices.xml
+D:\test\后端\ManagementSystem\ManagementSystem\obj\Release\net6.0\ManagementSystem.xml

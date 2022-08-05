@@ -15,6 +15,17 @@ namespace hxjyController
         Userservice userservice = new Userservice();
 
         /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public List<User> Login(string username)
+        {
+            return userservice.Login(username);
+        }
+
+        /// <summary>
         /// 根据id获取用户
         /// </summary>
         /// <param name="id"></param>

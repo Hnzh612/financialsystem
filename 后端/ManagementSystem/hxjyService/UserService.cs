@@ -11,6 +11,18 @@ namespace hxjyServices
     public class Userservice
     {
         SqlSugarScope db = DBContent.GetDB();
+
+        ///<summary>
+        /// 登录
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public List<User> Login(string username)
+        {
+            // 返回数据库受影响的行数
+            return db.Queryable<User>().Where(it => it.username == username).ToList();
+        }
+
         ///<summary>
         /// 添加用户
         /// </summary>
