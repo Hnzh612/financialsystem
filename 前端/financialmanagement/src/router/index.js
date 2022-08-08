@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '@/components/Login.vue'
-import Home from '@/components/Home.vue'
+import myLogin from '@/components/myLogin.vue'
+import myHome from '@/components/myHome.vue'
 
 Vue.use(VueRouter)
 
@@ -9,9 +9,9 @@ const routes = [
   { path:'/',redirect: "/login"},
   {
     path: '/login',
-    component: Login
+    component: myLogin
   },
-  { path: '/home', component: Home}
+  { path: '/home', component: myHome}
 ]
 
 const router = new VueRouter({
