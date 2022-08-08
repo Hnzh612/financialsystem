@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {}
+    "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {}
   },
   "projects": {
-    "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+    "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
+        "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
         "projectName": "hxjyModel",
-        "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
+        "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
         "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\obj\\",
+        "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",

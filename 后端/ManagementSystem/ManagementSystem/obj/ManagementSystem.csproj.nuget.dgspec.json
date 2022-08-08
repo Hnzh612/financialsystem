@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj": {}
+    "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
+    "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj",
+        "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj",
         "projectName": "hxjyController",
-        "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj",
+        "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj",
         "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\后端\\ManagementSystem\\hxjyController\\obj\\",
+        "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
               },
-              "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+    "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
+        "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
         "projectName": "hxjyModel",
-        "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
+        "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
         "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\obj\\",
+        "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -131,14 +131,14 @@
         }
       }
     },
-    "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
+    "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj",
+        "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj",
         "projectName": "hxjyServices",
-        "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj",
+        "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj",
         "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\后端\\ManagementSystem\\hxjyService\\obj\\",
+        "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,8 +155,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
               }
             }
           }
@@ -195,14 +195,14 @@
         }
       }
     },
-    "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj": {
+    "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
+        "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
         "projectName": "ManagementSystem",
-        "projectPath": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
+        "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
         "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-        "outputPath": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\obj\\",
+        "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,14 +219,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj"
               },
-              "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
               },
-              "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
-                "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
+              "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
+                "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mrDQs4TnmJPQqtM/6/wtR6LNiob8KzOSgIJwXQ3L7nrOaQnBdRH5l/vjeD55CbA0q7jP9AdJ/J5VVyn40QuiLA==",
+  "dgSpecHash": "02I7GO1EXKDFqlL5A2zkZemBA8Nt/RUyW/9zAG3GjuABhU8q//BJNXYhBoOCPWgYGsPeDh37el4h0GpuLgT15Q==",
   "success": true,
-  "projectFilePath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
+  "projectFilePath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\123456789\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\123456789\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",

@@ -1,4 +1,4 @@
-﻿using hxjyModel;
+﻿using hxjyModel.dbModels;
 using SqlSugar;
 using System;
 using System.Collections.Generic;

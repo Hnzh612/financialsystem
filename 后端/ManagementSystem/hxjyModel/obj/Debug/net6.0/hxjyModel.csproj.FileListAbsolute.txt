@@ -12,3 +12,17 @@ D:\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.pdb
 D:\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\ref\hxjyModel.dll
 D:\test\后端\ManagementSystem\hxjyModel\bin\Debug\net6.0\hxjyModel.xml
 D:\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.xml
+D:\自己\test\后端\ManagementSystem\hxjyModel\bin\Debug\net6.0\hxjyModel.deps.json
+D:\自己\test\后端\ManagementSystem\hxjyModel\bin\Debug\net6.0\hxjyModel.dll
+D:\自己\test\后端\ManagementSystem\hxjyModel\bin\Debug\net6.0\hxjyModel.pdb
+D:\自己\test\后端\ManagementSystem\hxjyModel\bin\Debug\net6.0\hxjyModel.xml
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.csproj.AssemblyReference.cache
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.AssemblyInfoInputs.cache
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.AssemblyInfo.cs
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.csproj.CoreCompileInputs.cache
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.dll
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\refint\hxjyModel.dll
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.xml
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\hxjyModel.pdb
+D:\自己\test\后端\ManagementSystem\hxjyModel\obj\Debug\net6.0\ref\hxjyModel.dll

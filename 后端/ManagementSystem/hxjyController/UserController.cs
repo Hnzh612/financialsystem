@@ -1,4 +1,5 @@
 ﻿using hxjyModel;
+using hxjyModel.dbModels;
 using hxjyServices;
 using Microsoft.AspNetCore.Mvc;
 

@@ -29,7 +29,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.UserController.addUser(hxjyModel.User)">
+        <member name="M:hxjyController.UserController.addUser(hxjyModel.dbModels.User)">
             <summary>
             添加用户
             </summary>

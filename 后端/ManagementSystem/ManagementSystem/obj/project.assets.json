@@ -7571,11 +7571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
+      "projectUniqueName": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
       "projectName": "ManagementSystem",
-      "projectPath": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
+      "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\ManagementSystem.csproj",
       "packagesPath": "C:\\Users\\123456789\\.nuget\\packages\\",
-      "outputPath": "D:\\test\\后端\\ManagementSystem\\ManagementSystem\\obj\\",
+      "outputPath": "D:\\自己\\test\\后端\\ManagementSystem\\ManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\123456789\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7592,14 +7592,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
-              "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj"
+            "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj": {
+              "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyController\\hxjyController.csproj"
             },
-            "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
-              "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
+            "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj": {
+              "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyModel\\hxjyModel.csproj"
             },
-            "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
-              "projectPath": "D:\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
+            "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj": {
+              "projectPath": "D:\\自己\\test\\后端\\ManagementSystem\\hxjyService\\hxjyServices.csproj"
             }
           }
         }

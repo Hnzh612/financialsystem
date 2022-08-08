@@ -16,7 +16,7 @@
              <param name="username"></param>
              <returns></returns>
         </member>
-        <member name="M:hxjyServices.Userservice.AddUser(hxjyModel.User)">
+        <member name="M:hxjyServices.Userservice.AddUser(hxjyModel.dbModels.User)">
             <summary>
              添加用户
              </summary>
@@ -43,7 +43,7 @@
              <param name="id"></param>
              <returns></returns>
         </member>
-        <member name="M:hxjyServices.Userservice.UpdateUser(hxjyModel.User)">
+        <member name="M:hxjyServices.Userservice.UpdateUser(hxjyModel.dbModels.User)">
             <summary>
              更新用户
              </summary>

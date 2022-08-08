@@ -40,6 +40,8 @@ export default {
         async login() {
             const { data: res } = await userApi.login(this.username, this.password)
             if (this.password == res[0].password) {
+                localStorage.setItem('username',this.username)
+                localStorage.setItem('type',res[0].type==0?'用户':'管理员')
                 this.$message({
                     message: '恭喜你登录成功',
                     type: 'success',
