@@ -8,6 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 导入样式
 import '@/css/index.css'
 
+var dayjs = require('dayjs')
+Vue.prototype.dayjs = dayjs
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.directive('title', {
