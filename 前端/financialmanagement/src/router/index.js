@@ -21,7 +21,7 @@ const routes = [
     children:[
       { path:'purchase', component: purchaseLedger },
       { path:'sales', component: salesLedger },
-      { path:'salesdetail/:pid', component: salesdetail , props:true}
+      { path:'salesdetail/:cid', component: salesdetail , props:true}
     ]  
   }
 ]

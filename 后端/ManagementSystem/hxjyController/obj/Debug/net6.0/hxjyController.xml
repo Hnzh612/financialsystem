@@ -4,36 +4,206 @@
         <name>hxjyController</name>
     </assembly>
     <members>
-        <member name="T:hxjyController.UserController">
+        <member name="T:hxjyController.ParamController">
+            <summary>
+            参数接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.SelectVarietByName(System.String)">
+            <summary>
+            根据品种名查询
+            </summary>
+            <param name="vname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.deleteVarietById(System.Int32)">
+            <summary>
+            根据id删除品种
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.getAllvariets">
+            <summary>
+            获取全部品种
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.addVariet(hxjyModel.dbModels.ParamVariet)">
+            <summary>
+            添加品种
+            </summary>
+            <param name="paramvariet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.updateVariet(hxjyModel.dbModels.ParamVariet)">
+            <summary>
+            更新品种
+            </summary>
+            <param name="paramvariet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.SelectMaterialByName(System.String)">
+            <summary>
+            根据材质名查询
+            </summary>
+            <param name="vname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.deleteMaterialById(System.Int32)">
+            <summary>
+            根据id删除材质
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.getAllMaterials">
+            <summary>
+            获取全部材质
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.addMaterial(hxjyModel.dbModels.ParamMaterial)">
+            <summary>
+            添加材质
+            </summary>
+            <param name="parammaterial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.updateMaterial(hxjyModel.dbModels.ParamMaterial)">
+            <summary>
+            更新材质
+            </summary>
+            <param name="parammaterial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.SelectCityByName(System.String)">
+            <summary>
+            根据产地名查询
+            </summary>
+            <param name="cname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.deleteCityById(System.Int32)">
+            <summary>
+            根据id删除产地
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.getAllCities">
+            <summary>
+            获取全部材质
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.addCity(hxjyModel.dbModels.ParamCity)">
+            <summary>
+            添加材质
+            </summary>
+            <param name="paramcity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.updateCity(hxjyModel.dbModels.ParamCity)">
+            <summary>
+            更新材质
+            </summary>
+            <param name="paramcity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:hxjyController.SalesController">
+            <summary>
+            参数接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.SelectSalesConnect(hxjyModel.dbModels.SalesConnect)">
+            <summary>
+            根据条件查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.deleteSalesConnectById(System.Int32)">
+            <summary>
+            根据id删除订单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.getAllSalesConnect">
+            <summary>
+            获取全部订单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.addSalesConnect(hxjyModel.dbModels.SalesConnect)">
+            <summary>
+            添加订单
+            </summary>
+            <param name="salesconnect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.updateSalesConnect(hxjyModel.dbModels.SalesConnect)">
+            <summary>
+            更新订单
+            </summary>
+            <param name="salesconnect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.addSalesOrder(hxjyModel.dbModels.SalesOrder)">
+            <summary>
+            添加栏目
+            </summary>
+            <param name="salesconnect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.deleteSalesOrder(System.Int32)">
+            <summary>
+            删除栏目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.SalesController.SelectSalesOrders(System.Int32)">
+            <summary>
+            获取所有栏目
+            </summary>
+            <param name="cid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:hxjyController.AdminController">
             <summary>
             用户接口
             </summary>
+            <returns></returns>
         </member>
-        <member name="M:hxjyController.UserController.Login(System.String)">
+        <member name="M:hxjyController.AdminController.Login(System.String)">
             <summary>
             登录
             </summary>
             <param name="username"></param>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.UserController.getUserInfoById(System.Int32)">
+        <member name="M:hxjyController.AdminController.getAdminInfoById(System.Int32)">
             <summary>
             根据id获取用户
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.UserController.getAllUser">
+        <member name="M:hxjyController.AdminController.getAllAdmin">
             <summary>
             获取全部用户
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.UserController.addUser(hxjyModel.dbModels.User)">
+        <member name="M:hxjyController.AdminController.addAdmin(hxjyModel.dbModels.Admin)">
             <summary>
             添加用户
             </summary>
-            <param name="user"></param>
+            <param name="admin"></param>
             <returns></returns>
         </member>
     </members>

@@ -14,7 +14,7 @@ namespace hxjyServices
         /// </summary>
         static SqlSugarScope db = new SqlSugarScope(new ConnectionConfig() 
         { 
-            ConnectionString = "server=47.113.201.13;Database=hxjy;Uid=root;Pwd=123456;Port=3306;Allow User Variables=True;CharSet=UTF8mb4; SslMode=None", 
+            ConnectionString = "server=localhost;Database=hxjy;Uid=root;Pwd=123456;Port=3306;Allow User Variables=True;CharSet=UTF8mb4; SslMode=None", 
             DbType = DbType.MySql, IsAutoCloseConnection = true 
         }, db =>
         {

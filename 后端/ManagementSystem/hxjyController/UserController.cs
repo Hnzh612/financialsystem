@@ -9,11 +9,12 @@ namespace hxjyController
     /// <summary>
     /// 用户接口
     /// </summary>
+    /// <returns></returns>
     [Route("[controller]/[action]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class AdminController : ControllerBase
     {
-        Userservice userservice = new Userservice();
+        Adminservice adminservice = new Adminservice();
 
         /// <summary>
         /// 登录
@@ -21,9 +22,9 @@ namespace hxjyController
         /// <param name="username"></param>
         /// <returns></returns>
         [HttpGet]
-        public List<User> Login(string username)
+        public List<Admin> Login(string username)
         {
-            return userservice.Login(username);
+            return adminservice.Login(username);
         }
 
         /// <summary>
@@ -32,28 +33,28 @@ namespace hxjyController
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        public User getUserInfoById(int id)
+        public Admin getAdminInfoById(int id)
         {
-            return userservice.QueryUser(id);
+            return adminservice.QueryAdmin(id);
         }
         /// <summary>
         /// 获取全部用户
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public List<User> getAllUser()
+        public List<Admin> getAllAdmin()
         {
-            return userservice.QueryUsers();
+            return adminservice.QueryAdmins();
         }
         /// <summary>
         /// 添加用户
         /// </summary>
-        /// <param name="user"></param>
+        /// <param name="admin"></param>
         /// <returns></returns>
         [HttpPost]
-        public int addUser(User user)
+        public int addAdmin(Admin admin)
         {
-            return userservice.AddUser(user);
+            return adminservice.AddAdmin(admin);
         }
 
     }
