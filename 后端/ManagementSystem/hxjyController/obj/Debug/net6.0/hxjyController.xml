@@ -94,7 +94,7 @@
         </member>
         <member name="M:hxjyController.ParamController.getAllCities">
             <summary>
-            获取全部材质
+            获取全部产地
             </summary>
             <returns></returns>
         </member>
@@ -107,7 +107,7 @@
         </member>
         <member name="M:hxjyController.ParamController.updateCity(hxjyModel.dbModels.ParamCity)">
             <summary>
-            更新材质
+            更新产地
             </summary>
             <param name="paramcity"></param>
             <returns></returns>
@@ -156,7 +156,7 @@
             <summary>
             添加栏目
             </summary>
-            <param name="salesconnect"></param>
+            <param name="salesorder"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyController.SalesController.deleteSalesOrder(System.Int32)">
