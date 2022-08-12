@@ -152,11 +152,11 @@
              <param name="paramcity"></param>
              <returns></returns>
         </member>
-        <member name="M:hxjyServices.SalesService.SelectSalesConnect(hxjyModel.dbModels.SalesConnect)">
+        <member name="M:hxjyServices.SalesService.QuerySalesConnect(System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
-             根据查询体查询销售订单
+             查询全部订单
              </summary>
-             <returns></returns>
+             <returns>以列表形式返回</returns>
         </member>
         <member name="M:hxjyServices.SalesService.AddSalesConnect(hxjyModel.dbModels.SalesConnect)">
             <summary>
@@ -171,12 +171,6 @@
              </summary>
              <param name="id"></param>
              <returns></returns>
-        </member>
-        <member name="M:hxjyServices.SalesService.QueryConnect">
-            <summary>
-             查询全部订单
-             </summary>
-             <returns>以列表形式返回</returns>
         </member>
         <member name="M:hxjyServices.SalesService.UpdateConnect(hxjyModel.dbModels.SalesConnect)">
             <summary>

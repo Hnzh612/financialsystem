@@ -118,22 +118,20 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.SalesController.SelectSalesConnect(hxjyModel.dbModels.SalesConnect)">
+        <member name="M:hxjyController.SalesController.getAllSalesConnect(System.Int32,System.String,System.String,System.String,System.String)">
             <summary>
-            根据条件查询
+            获取全部订单
             </summary>
+            <param name="page"></param>
+            <param name="sname"></param>
+            <param name="scompany"></param>
+            <param name="rname"></param>
+            <param name="rcompany"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyController.SalesController.deleteSalesConnectById(System.Int32)">
             <summary>
             根据id删除订单
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.SalesController.getAllSalesConnect">
-            <summary>
-            获取全部订单
             </summary>
             <param name="id"></param>
             <returns></returns>

@@ -4,7 +4,7 @@
         <name>hxjyModel</name>
     </assembly>
     <members>
-        <member name="T:hxjyModel.apiModesl.CallBackModels">
+        <member name="T:hxjyModel.apiModels.CallBackModels">
             <summary>
             接口返回数据通用格式
             </summary>
