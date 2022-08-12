@@ -10,106 +10,25 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.ParamController.SelectVarietByName(System.String)">
-            <summary>
-            根据品种名查询
-            </summary>
-            <param name="vname"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.deleteVarietById(System.Int32)">
-            <summary>
-            根据id删除品种
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.getAllvariets">
+        <member name="M:hxjyController.ParamController.getAllParams">
             <summary>
             获取全部品种
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.ParamController.addVariet(hxjyModel.dbModels.ParamVariet)">
+        <member name="M:hxjyController.ParamController.deleteParamById(System.Int32)">
+            <summary>
+            根据id删除参数
+            </summary>
+            <param name="id"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.ParamController.addParam(hxjyModel.dbModels.Params)">
             <summary>
             添加品种
             </summary>
             <param name="paramvariet"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.updateVariet(hxjyModel.dbModels.ParamVariet)">
-            <summary>
-            更新品种
-            </summary>
-            <param name="paramvariet"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.SelectMaterialByName(System.String)">
-            <summary>
-            根据材质名查询
-            </summary>
-            <param name="vname"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.deleteMaterialById(System.Int32)">
-            <summary>
-            根据id删除材质
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.getAllMaterials">
-            <summary>
-            获取全部材质
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.addMaterial(hxjyModel.dbModels.ParamMaterial)">
-            <summary>
-            添加材质
-            </summary>
-            <param name="parammaterial"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.updateMaterial(hxjyModel.dbModels.ParamMaterial)">
-            <summary>
-            更新材质
-            </summary>
-            <param name="parammaterial"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.SelectCityByName(System.String)">
-            <summary>
-            根据产地名查询
-            </summary>
-            <param name="cname"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.deleteCityById(System.Int32)">
-            <summary>
-            根据id删除产地
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.getAllCities">
-            <summary>
-            获取全部产地
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.addCity(hxjyModel.dbModels.ParamCity)">
-            <summary>
-            添加材质
-            </summary>
-            <param name="paramcity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:hxjyController.ParamController.updateCity(hxjyModel.dbModels.ParamCity)">
-            <summary>
-            更新产地
-            </summary>
-            <param name="paramcity"></param>
             <returns></returns>
         </member>
         <member name="T:hxjyController.SalesController">
@@ -118,7 +37,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.SalesController.getAllSalesConnect(System.Int32,System.String,System.String,System.String,System.String)">
+        <member name="M:hxjyController.SalesController.getAllSalesConnect(System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
             <summary>
             获取全部订单
             </summary>
@@ -127,6 +46,7 @@
             <param name="scompany"></param>
             <param name="rname"></param>
             <param name="rcompany"></param>
+            <param name="rid"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyController.SalesController.deleteSalesConnectById(System.Int32)">

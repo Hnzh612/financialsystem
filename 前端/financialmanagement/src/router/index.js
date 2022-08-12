@@ -3,10 +3,13 @@ import VueRouter from 'vue-router'
 
 import myLogin from '@/components/myLogin.vue'
 import myHome from '@/components/myHome.vue'
-// 导入子组件
+// 导入台账组件
 import purchaseLedger from '@/components/standingBook/purchaseLedger.vue'
 import salesLedger from '@/components/standingBook/salesLedger.vue'
 import salesdetail from '@/components/standingBook/salesdetail.vue'
+
+// 导入设置组件
+import salesparam from '@/components/settings/salesparam.vue'
 
 
 Vue.use(VueRouter)
@@ -17,12 +20,17 @@ const routes = [
     path: '/login',
     component: myLogin
   },
-  { path: '/home', component: myHome, 
+  { path: '/home', component: myHome, redirect: '/home/sales',
     children:[
       { path:'purchase', component: purchaseLedger },
       { path:'sales', component: salesLedger },
-      { path:'salesdetail/:cid', component: salesdetail , props:true}
+      { path:'salesdetail/:cid', component: salesdetail , props:true }
     ]  
+  },
+  { path: '/settings', component: myHome, redirect: '/settings/salesparam',
+    children:[
+      { path:'salesparam', component: salesparam }
+    ]
   }
 ]
 

@@ -9,19 +9,9 @@
             接口返回数据通用格式
             </summary>
         </member>
-        <member name="T:hxjyModel.dbModels.ParamVariet">
+        <member name="T:hxjyModel.dbModels.Params">
             <summary>
-            品种
-            </summary>
-        </member>
-        <member name="T:hxjyModel.dbModels.ParamMaterial">
-            <summary>
-            材质
-            </summary>
-        </member>
-        <member name="T:hxjyModel.dbModels.ParamCity">
-            <summary>
-            产地
+            销售参数
             </summary>
         </member>
     </members>
