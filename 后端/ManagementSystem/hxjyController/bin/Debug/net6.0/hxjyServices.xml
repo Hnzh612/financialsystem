@@ -45,6 +45,60 @@
              <param name="admin"></param>
              <returns></returns>
         </member>
+        <member name="T:hxjyServices.BusinessledgercsService">
+            <summary>
+            业务发生台账
+            </summary>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.GetAllSum">
+            <summary>
+            获取所有时间业务总和列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.AddSum(hxjyModel.dbModels.Businessledgercssum)">
+            <summary>
+            新建某月业务总和
+            </summary>
+            <param name="businessledgercssum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.DelSum(System.Int32)">
+            <summary>
+            删除当月业务总和
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.UpdateSum(System.String,System.Int32)">
+            <summary>
+            更新当月业务总和的备注
+            </summary>
+            <param name="remark"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.GetAllLedgercsBySid(System.Int32)">
+            <summary>
+            根据sid获取相应的业务发生栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.AddLedgercs(hxjyModel.dbModels.Businessledgercs)">
+            <summary>
+            添加业务发生栏目
+            </summary>
+            <param name="businessledgercs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.BusinessledgercsService.DelLedgercs(System.Int32)">
+            <summary>
+             删除业务发生栏目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="F:hxjyServices.DBContent.db">
             <summary>
              数据库连接字符

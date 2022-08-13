@@ -4,6 +4,60 @@
         <name>hxjyController</name>
     </assembly>
     <members>
+        <member name="T:hxjyController.BusinessledgercsController">
+            <summary>
+            业务发生台账
+            </summary>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.GetAllSum">
+            <summary>
+            获取所有时间业务总和列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.AddSum(hxjyModel.dbModels.Businessledgercssum)">
+            <summary>
+            新建某月业务总和
+            </summary>
+            <param name="businessledgercssum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.DelSum(System.Int32)">
+            <summary>
+            删除当月业务总和以及所连接的栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.UpdateSum(System.String,System.Int32)">
+            <summary>
+            更新当月业务总和的备注
+            </summary>
+            <param name="remark"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.GetAllLedgercsBySid(System.Int32)">
+            <summary>
+            根据sid获取相应的业务发生栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.AddLedgercs(hxjyModel.dbModels.Businessledgercs)">
+            <summary>
+            添加业务发生栏目
+            </summary>
+            <param name="businessledgercs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.BusinessledgercsController.DelLedgercs(System.Int32)">
+            <summary>
+            删除业务发生栏目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:hxjyController.ParamController">
             <summary>
             参数接口
