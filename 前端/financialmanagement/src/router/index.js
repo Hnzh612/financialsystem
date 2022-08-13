@@ -7,7 +7,8 @@ import myHome from '@/components/myHome.vue'
 import purchaseLedger from '@/components/standingBook/purchaseLedger.vue'
 import salesLedger from '@/components/standingBook/salesLedger.vue'
 import salesdetail from '@/components/standingBook/salesdetail.vue'
-
+import businessledger from '@/components/standingBook/businessledger.vue'
+import businessdetail from '@/components/standingBook/businessdetail.vue'
 // 导入设置组件
 import salesparam from '@/components/settings/salesparam.vue'
 
@@ -23,8 +24,11 @@ const routes = [
   { path: '/home', component: myHome, redirect: '/home/sales',
     children:[
       { path:'purchase', component: purchaseLedger },
+      { path:'business', component:businessledger },
+      { path:'businessdetail', component:businessdetail },
       { path:'sales', component: salesLedger },
       { path:'salesdetail/:cid', component: salesdetail , props:true }
+      
     ]  
   },
   { path: '/settings', component: myHome, redirect: '/settings/salesparam',
