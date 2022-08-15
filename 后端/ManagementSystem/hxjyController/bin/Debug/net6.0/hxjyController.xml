@@ -29,12 +29,11 @@
             <param name="sid"></param>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.BusinessledgercsController.UpdateSum(System.String,System.Int32)">
+        <member name="M:hxjyController.BusinessledgercsController.UpdateSum(hxjyModel.dbModels.Businessledgercssum)">
             <summary>
             更新当月业务总和的备注
             </summary>
-            <param name="remark"></param>
-            <param name="id"></param>
+            <param name="businessledgercssum"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyController.BusinessledgercsController.GetAllLedgercsBySid(System.Int32)">

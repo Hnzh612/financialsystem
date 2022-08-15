@@ -70,12 +70,11 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:hxjyServices.BusinessledgercsService.UpdateSum(System.String,System.Int32)">
+        <member name="M:hxjyServices.BusinessledgercsService.UpdateSum(hxjyModel.dbModels.Businessledgercssum)">
             <summary>
-            更新当月业务总和的备注
+            更新当月业务总和
             </summary>
-            <param name="remark"></param>
-            <param name="id"></param>
+            <param name="businessledgercssum"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyServices.BusinessledgercsService.GetAllLedgercsBySid(System.Int32)">
