@@ -103,6 +103,59 @@
              数据库连接字符
              </summary>
         </member>
+        <member name="T:hxjyServices.InvoicingService">
+            <summary>
+            进销存台账
+            </summary>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.GetAllSum(System.Int32)">
+            <summary>
+            获取所有时间业务总和列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.AddSum(hxjyModel.dbModels.Invoicing_Ledger_Sum)">
+            <summary>
+            新建某月业务总和
+            </summary>
+            <param name="invoicing_ledger_sum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.DelSum(System.Int32)">
+            <summary>
+            删除当月业务总和
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.UpdateSum(hxjyModel.dbModels.Invoicing_Ledger_Sum)">
+            <summary>
+            更新当月业务总和
+            </summary>
+            <param name="invoicing_ledger_sum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.GetAllLedgercsBySid(System.Int32)">
+            <summary>
+            根据sid获取相应的业务发生栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.AddLedgercs(hxjyModel.dbModels.Invoicing_Ledger)">
+            <summary>
+            添加业务发生栏目
+            </summary>
+            <param name="invoicing_ledger"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyServices.InvoicingService.DelLedgercs(System.Int32)">
+            <summary>
+             删除业务发生栏目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:hxjyServices.ParamService.AddParam(hxjyModel.dbModels.Params)">
             <summary>
              添加销售参数

@@ -215,9 +215,9 @@ export default {
       })
     },
     // 保存业务订单
-    async UpdateSum(companyConnect) {
-      const { data: res } = await businessledgerApi.UpdateSum(companyConnect)
-      if (res == 1) {
+    async UpdateSum(businessledgercssum) {
+      const { data: res } = await businessledgerApi.UpdateSum(businessledgercssum)
+      if (res !== 1) {
         this.$message({
           message: '保存成功',
           type: 'success',

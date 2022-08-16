@@ -24,7 +24,7 @@
             </el-table-column>
             <el-table-column prop="surplus" label="余额" width="120">
             </el-table-column>
-            <el-table-column prop="remark" label="备注" width="120">
+            <el-table-column prop="remark" label="备注" width="200">
             </el-table-column>
             <el-table-column fixed="right" label="操作">
                 <template slot-scope="scope">
@@ -78,7 +78,7 @@ export default {
         },
         // 删除
         async del(id) {
-            this.$confirm('此操作将永久删除该订单，是否继续？', '提示', {
+            this.$confirm('此操作将永久删除该订单以及关联栏目，是否继续？', '提示', {
                 confirmButtonText: '确定',
                 cancelButtonText: '取消',
                 type: 'warning'

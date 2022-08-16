@@ -75,14 +75,14 @@ namespace hxjyServices
             int c = db.Ado.GetInt($"select id from business_ledger_sum where id={businessledgercssum.id}");
             if (c > 0)
             {
-                string updatesql = $"update business_ledger_sum set " +
-                    $"date={businessledgercssum.date},"+
-                    $"incoinsum={businessledgercssum.incoinsum}," +
-                    $"outcoinsum={businessledgercssum.outcoinsum}," +
-                    $"surplus={businessledgercssum.surplus} ";
-                if (!string.IsNullOrEmpty(businessledgercssum.remark))
+                string updatesql = "";
+                if (businessledgercssum.date <= 0)
                 {
-                    updatesql += $" ,remark='{businessledgercssum.remark}' ";
+                    updatesql = $"update business_ledger_sum set incoinsum={businessledgercssum.incoinsum},outcoinsum={businessledgercssum.outcoinsum},surplus={businessledgercssum.surplus}  ";
+                }
+                else
+                {
+                    updatesql = $"update business_ledger_sum set date={businessledgercssum.date},remark='{businessledgercssum.remark}'";
                 }
                 updatesql += $" where id={businessledgercssum.id}";
                 db.Ado.ExecuteCommand(updatesql);
@@ -90,8 +90,8 @@ namespace hxjyServices
             }
             else
             {
-                string insertsql = " insert business_ledger_sum (date,incoinsum,outcoinsum,surplus,remark) ";
-                insertsql += $"values({businessledgercssum.date},{businessledgercssum.incoinsum},{businessledgercssum.outcoinsum},{businessledgercssum.surplus},'{businessledgercssum.remark}')";
+                string insertsql = " insert business_ledger_sum (date,remark) ";
+                insertsql += $"values({businessledgercssum.date},'{businessledgercssum.remark}')";
                 return db.Ado.ExecuteCommand(insertsql);
             }
         }

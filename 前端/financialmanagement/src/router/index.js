@@ -4,11 +4,12 @@ import VueRouter from 'vue-router'
 import myLogin from '@/components/myLogin.vue'
 import myHome from '@/components/myHome.vue'
 // 导入台账组件
-import purchaseLedger from '@/components/standingBook/purchaseLedger.vue'
+import InvoicingLedger from '@/components/standingBook/InvoicingLedger.vue'
 import salesLedger from '@/components/standingBook/salesLedger.vue'
 import salesdetail from '@/components/standingBook/salesdetail.vue'
 import businessledger from '@/components/standingBook/businessledger.vue'
 import businessdetail from '@/components/standingBook/businessdetail.vue'
+import invoicingdetail from '@/components/standingBook/invoicingdetail.vue'
 // 导入设置组件
 import salesparam from '@/components/settings/salesparam.vue'
 
@@ -23,7 +24,8 @@ const routes = [
   },
   { path: '/home', component: myHome, redirect: '/home/sales',
     children:[
-      { path:'purchase', component: purchaseLedger },
+      { path:'invoicing', component: InvoicingLedger },
+      { path:'invoicingdetail/:sid', component:invoicingdetail, props:true },
       { path:'business', component:businessledger },
       { path:'businessdetail/:sid', component:businessdetail, props:true },
       { path:'sales', component: salesLedger },

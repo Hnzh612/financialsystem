@@ -57,6 +57,59 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:hxjyController.InvoicingController">
+            <summary>
+            业务发生台账
+            </summary>
+        </member>
+        <member name="M:hxjyController.InvoicingController.GetAllSum(System.Int32)">
+            <summary>
+            获取所有时间进销存总和列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.AddSum(hxjyModel.dbModels.Invoicing_Ledger_Sum)">
+            <summary>
+            新建某月进销存总和
+            </summary>
+            <param name="invoicing_Ledger_Sum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.DelSum(System.Int32)">
+            <summary>
+            删除当月进销存总和以及所连接的栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.UpdateSum(hxjyModel.dbModels.Invoicing_Ledger_Sum)">
+            <summary>
+            更新当月进销存总和
+            </summary>
+            <param name="invoicing_Ledger_Sum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.GetAllLedgercsBySid(System.Int32)">
+            <summary>
+            根据sid获取相应的进销存栏目
+            </summary>
+            <param name="sid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.AddLedgercs(hxjyModel.dbModels.Invoicing_Ledger)">
+            <summary>
+            添加进销存栏目
+            </summary>
+            <param name="invoicing_Ledger"></param>
+            <returns></returns>
+        </member>
+        <member name="M:hxjyController.InvoicingController.DelLedgercs(System.Int32)">
+            <summary>
+            删除进销存栏目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:hxjyController.ParamController">
             <summary>
             参数接口

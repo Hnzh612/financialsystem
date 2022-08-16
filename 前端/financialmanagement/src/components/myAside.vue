@@ -12,7 +12,7 @@
                             <router-link to="/home/sales">销售台账</router-link>
                         </el-menu-item>
                         <el-menu-item>
-                            <router-link to="/home/purchase">进销存管理表</router-link>
+                            <router-link to="/home/invoicing">进销存管理表</router-link>
                         </el-menu-item>
                         <el-menu-item>
                             <router-link to="/home/business">业务发生台账</router-link>
