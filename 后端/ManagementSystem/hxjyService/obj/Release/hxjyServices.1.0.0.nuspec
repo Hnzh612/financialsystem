@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>hxjyServices</id>
+    <version>1.0.0</version>
+    <authors>hxjyServices</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="hxjyModel" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="SqlSugarCore" version="5.1.1-preview13" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\test\后端\ManagementSystem\hxjyService\bin\Release\net6.0\hxjyServices.dll" target="lib\net6.0\hxjyServices.dll" />
+    <file src="D:\test\后端\ManagementSystem\hxjyService\bin\Release\net6.0\hxjyServices.xml" target="lib\net6.0\hxjyServices.xml" />
+  </files>
+</package>
