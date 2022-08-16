@@ -9,7 +9,7 @@
             业务发生台账
             </summary>
         </member>
-        <member name="M:hxjyController.BusinessledgercsController.GetAllSum">
+        <member name="M:hxjyController.BusinessledgercsController.GetAllSum(System.Int32)">
             <summary>
             获取所有时间业务总和列表
             </summary>
@@ -31,7 +31,7 @@
         </member>
         <member name="M:hxjyController.BusinessledgercsController.UpdateSum(hxjyModel.dbModels.Businessledgercssum)">
             <summary>
-            更新当月业务总和的备注
+            更新当月业务总和
             </summary>
             <param name="businessledgercssum"></param>
             <returns></returns>

@@ -50,7 +50,7 @@
             业务发生台账
             </summary>
         </member>
-        <member name="M:hxjyServices.BusinessledgercsService.GetAllSum">
+        <member name="M:hxjyServices.BusinessledgercsService.GetAllSum(System.Int32)">
             <summary>
             获取所有时间业务总和列表
             </summary>
