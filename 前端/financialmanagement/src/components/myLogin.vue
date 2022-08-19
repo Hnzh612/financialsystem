@@ -6,7 +6,7 @@
             </div>
             <div class="main" v-if="logintype == 1">
                 <input type="text" class="username" v-model="username" placeholder="请输入用户名">
-                <input type="password" class="password" v-model="password" placeholder="请输入密码">
+                <input type="password" class="password" v-model="password" placeholder="请输入密码" @keyup.enter="login">
                 <input class="btn" type="button" value="立即登录" @click="login">
                 <p><i>还未注册，</i><a class="Add" @click="change">点击前往注册</a></p>
             </div>
@@ -23,6 +23,7 @@
 
 <script>
 import userApi from '@/api/userApi'
+import Vue from 'vue'
 
 export default {
     name: 'login',
@@ -39,9 +40,11 @@ export default {
     methods: {
         async login() {
             const { data: res } = await userApi.login(this.username, this.password)
-            if (this.password == res[0].password) {
+            if (res.successed) {
                 localStorage.setItem('username',this.username)
-                localStorage.setItem('type',res[0].type==0?'用户':'管理员')
+                localStorage.setItem('type',res.data[0].type==0?'用户':'管理员')
+                localStorage.setItem('token',`Bearer ${res.message}`)
+                Vue.prototype.$type = localStorage.getItem('type')
                 this.$message({
                     message: '恭喜你登录成功',
                     type: 'success',

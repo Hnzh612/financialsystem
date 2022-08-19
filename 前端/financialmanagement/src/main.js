@@ -10,6 +10,7 @@ import '@/css/index.css'
 
 var dayjs = require('dayjs')
 Vue.prototype.dayjs = dayjs
+Vue.prototype.$type = localStorage.getItem('type')
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.directive('title', {

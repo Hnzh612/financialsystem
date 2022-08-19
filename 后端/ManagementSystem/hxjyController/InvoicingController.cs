@@ -3,7 +3,7 @@ using hxjyModel.apiModels;
 using hxjyServices;
 using SqlSugar;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace hxjyController
 {
@@ -12,6 +12,7 @@ namespace hxjyController
     /// </summary>
     [Route("[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class InvoicingController:ControllerBase
     {
         InvoicingService invoicingservice = new InvoicingService();

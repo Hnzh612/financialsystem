@@ -1,5 +1,5 @@
 <template>
-  <div v-if="type == '管理员'">
+  <div v-if="this.$type == '管理员'">
     <div class="searchmean" style="margin-bottom: 10px;">
       <span class="demonstration">发货人：</span>
       <el-select v-model="querybody.sname" placeholder="请选择" style="width:100px">
@@ -22,8 +22,14 @@
         </el-option>
       </el-select>
       <el-button type="primary" icon="el-icon-search" circle @click="query()" style="margin-left:10px ;">查询</el-button>
-      <el-button type="warning" icon="el-icon-refresh" circle @click="refresh()" style="margin-left:10px ;">刷新</el-button>
+      <el-button type="warning" icon="el-icon-refresh" circle @click="refresh()" style="margin-left:10px ;">刷新
+      </el-button>
       <el-popover placement="bottom-left" width="980" trigger="click" style="margin:0 10px" @hide="add()">
+        <div class="inline-block">
+          <span class="demonstration">请选择----年份-月份：</span>
+          <el-date-picker type="month" v-model="temdata.date" placeholder="选择日期" style="width:180px">
+          </el-date-picker>
+        </div>
         <div class="footer">
           <div class="line">
             <div class="row">
@@ -71,21 +77,21 @@
     </div>
     <el-table ref="singleTable" :data="tableData" highlight-current-row @current-change="handleCurrentChange"
       style="width: 100%">
-      <el-table-column type="index" width="80" label="序号">
+      <el-table-column type="index" width="80" label="序号" align="center">
       </el-table-column>
-      <el-table-column prop="date" label="日期" width="150">
+      <el-table-column prop="date" label="日期" width="150" align="center">
       </el-table-column>
-      <el-table-column prop="sname" label="发货人" width="120">
+      <el-table-column prop="sname" label="发货人" width="120" align="center">
       </el-table-column>
-      <el-table-column prop="sphone" label="电话" width="130">
+      <el-table-column prop="sphone" label="电话" width="130" align="center">
       </el-table-column>
-      <el-table-column prop="scompany" label="公司" width="200">
+      <el-table-column prop="scompany" label="公司" width="250" align="center">
       </el-table-column>
-      <el-table-column prop="rname" label="收货人" width="120">
+      <el-table-column prop="rname" label="收货人" width="120" align="center">
       </el-table-column>
-      <el-table-column prop="rphone" label="电话" width="130">
+      <el-table-column prop="rphone" label="电话" width="130" align="center">
       </el-table-column>
-      <el-table-column prop="rcompany" label="公司" width="200">
+      <el-table-column prop="rcompany" label="公司" width="250" align="center">
       </el-table-column>
       <el-table-column fixed="right" label="操作">
         <template slot-scope="scope">
@@ -94,25 +100,51 @@
         </template>
       </el-table-column>
     </el-table>
-    <pages 
-      :total="total" 
-      :currentpage="querybody.page"
-      @handleSizeChangeSub="handleSizeChangeFun" 
+    <pages :total="total" :currentpage="querybody.page" @handleSizeChangeSub="handleSizeChangeFun"
       @handleCurrentChangeSub="handleCurrentChangeFun">
     </pages>
   </div>
-  <div v-else>
-    <img src="@/assets/jurisdiction.jpg" alt="">
-  </div>
+  <notype v-else></notype>
 </template>
 
 <script>
 import salesApi from '@/api/salesApi';
 import pages from '../utlis/pages.vue';
+import notype from '@/components/utlis/notype.vue'
 
 export default {
   components: { 
-    pages
+    pages,
+    notype
+  },
+    data() {
+    return {
+      total:11, // 总数
+      // 查询体
+      querybody: {
+        page:1,
+        sname: "",
+        scompany: "",
+        rname: "",
+        rcompany: ""
+      },
+      tableData: [],
+      // 缓存数据
+      temdata: {
+        id: 0,
+        date: new Date().getTime(),
+        sid: 0,
+        sname: "韩侃",
+        sphone: "18685231125",
+        sfax: "",
+        scompany: "遵义市鑫恒佳耀贸易有限公司",
+        rid: 0,
+        rname: "",
+        rphone: "",
+        rfax: "",
+        rcompany: ""
+      }
+    }
   },
   methods: {
     // 页码点击
@@ -161,18 +193,17 @@ export default {
     },
     // 添加
     add() {
-      this.temdata.date = new Date().getTime()
-      if (this.temdata.rcompany != '' && this.temdata.rname != '' && this.temdata.rphone != '') {
+      this.temdata.date = this.dayjs(this.temdata.date).$d.getTime()
+      if (this.temdata.rcompany != '') {
         this.addSalesConnect(this.temdata)
-        this.getAllSalesConnect(this.querybody)
         this.temdata = {
           id: 0,
-          date: 0,
+          date: new Date().getTime(),
           sid: 0,
           sname: "韩侃",
           sphone: "18685231125",
           sfax: "",
-          scompany: "鑫恒佳耀有限公司",
+          scompany: "遵义市鑫恒佳耀贸易有限公司",
           rid: 0,
           rname: "",
           rphone: "",
@@ -216,7 +247,7 @@ export default {
       const { data: res } = await salesApi.getAllSalesConnect(querybody)
       for (let i = 0; i < res.data.length; i++) {
         this.$set(
-          res.data[i], 'date', this.dayjs(res.data[i].date).format('YYYY-MM-DD')
+          res.data[i], 'date', this.dayjs(res.data[i].date).format('YYYY-MM')
         )
       }
       this.tableData = res.data
@@ -224,49 +255,24 @@ export default {
     },
     // 添加订单
     async addSalesConnect(temdata) {
-      await salesApi.addSalesConnect(temdata)
-    },
-  },
-
-  data() {
-    return {
-      type:'',
-      total:11, // 总数
-      // 查询体
-      querybody: {
-        rid:0,
-        page:1,
-        sname: "",
-        scompany: "",
-        rname: "",
-        rcompany: ""
-      },
-      tableData: [],
-      // 缓存数据
-      temdata: {
-        id: 0,
-        date: 0,
-        sid: 0,
-        sname: "韩侃",
-        sphone: "18685231125",
-        sfax: "",
-        scompany: "鑫恒佳耀有限公司",
-        rid: 0,
-        rname: "",
-        rphone: "",
-        rfax: "",
-        rcompany: ""
+      const { data:res} = await salesApi.addSalesConnect(temdata)
+      if(res==1) {
+        this.getAllSalesConnect(this.querybody)
       }
-    }
+    },
   },
   created() {
     this.getAllSalesConnect(this.querybody)
-    this.type = localStorage.getItem('type')
   }
 }
 </script>
 
 <style lang="less" scoped>
+.inline-block {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    height: 40px;
+}
 .footer {
   width: 955px;
   background-color: #F5F7FA;

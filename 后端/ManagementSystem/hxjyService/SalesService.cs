@@ -37,6 +37,7 @@ namespace hxjyServices
             {
                 querysql += $" and rcompany='{rcompany}'";
             }
+            querysql += $" order by date asc";
             querysql += $" limit { (page - 1) * 10},10";
             int total = db.Ado.GetInt( "select count(1) from sales_connect");
             // 返回数据库受影响的行数
@@ -54,12 +55,12 @@ namespace hxjyServices
         public int AddSalesConnect(SalesConnect salesconnect)
         {
             string querysql = $" select id from customer where company='{salesconnect.rcompany}'";
-            int c = db.Ado.ExecuteCommand(querysql);
-            if (c < 0)
+            int c = db.Ado.GetInt(querysql);
+            salesconnect.rid = c;
+            if (c==0)
             {
                 string insertsql = $" insert into customer (cname,phone,company,fax) values('{salesconnect.rname}','{salesconnect.rphone}','{salesconnect.rcompany}','{salesconnect.rfax}')";
                 db.Ado.ExecuteCommand(insertsql);
-                salesconnect.rid = db.Ado.GetInt(querysql);
             }
             // 返回数据库受影响的行数
             return db.Insertable(salesconnect).ExecuteCommand();

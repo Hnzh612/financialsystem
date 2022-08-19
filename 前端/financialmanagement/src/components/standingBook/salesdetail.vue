@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div v-if="this.$type == '管理员'">
     <div class="searchmean" style="margin-bottom: 10px;">
       <el-button type="warning" icon="el-icon-check" circle @click="save()">保存</el-button>
       <el-button type="danger" icon="el-icon-delete" circle @click="dedeleteSalesOrder(curid)">删除</el-button>
-      <el-button type="primary" icon="el-icon-upload el-icon--right" circle>导出</el-button>
+      <el-button type="primary" icon="el-icon-upload el-icon--right" circle @click="exportExcel">导出</el-button>
       <el-popover placement="right" width="350" trigger="click" style="margin:0 10px" @hide="add()" v-model="show">
         <div class="inline-block">
           <span class="demonstration">日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期：</span>
@@ -41,7 +41,7 @@
         </div>
         <div class="inline-block">
           <span class="demonstration">销售单价：</span>
-          <el-input v-model="temdata.unitprice" style="width:180px"></el-input>
+          <el-input v-model="temdata.unitprice" style="width:180px" @keyup.enter.native="showoff"></el-input>
         </div>
         <div style="text-align:center;">
           <el-button type="success" circle @click="showoff()">确定</el-button>
@@ -52,7 +52,7 @@
       <el-button type="info" icon="el-icon-arrow-left" circle @click="back()">返回</el-button>
     </div>
     <el-table :data="tableData" style="width: 100%;" :summary-method="getSummaries" show-summary tooltip-effect="dark"
-      @selection-change="handleSelectionChange">
+      @selection-change="handleSelectionChange" id="sales">
       <el-table-column type="selection" width="55">
       </el-table-column>
       <el-table-column label="遵义市鑫恒佳耀贸易有限公司对账单" align="center">
@@ -117,6 +117,7 @@
       </div>
     </div>
   </div>
+  <notype v-else></notype>
 </template>
 
 
@@ -124,9 +125,12 @@
 import pages from '@/components/utlis/pages.vue'
 import salesApi from '@/api/salesApi'
 import paramsApi from '@/api/paramsApi'
+import FileSaver from 'file-saver'
+import XLSX from 'xlsx'
+import notype from '@/components/utlis/notype.vue'
 
 export default {
-  components: { pages },
+  components: { pages,notype },
   name: 'salesdetail',
   props: ['cid'],
   data() {
@@ -202,7 +206,6 @@ export default {
     // 获取选中行
     handleSelectionChange(val) {
       this.multipleSelection = val;
-      console.log(val)
       if (val.length > 0) {
         this.curid = val[0].id
       } else {
@@ -221,7 +224,7 @@ export default {
         }
         const values = data.map(item => Number(item[column.property]));
         if (!values.every(value => isNaN(value))) {
-          if (index === 5 || index === 7 || index === 8) {
+          if (index === 6  || index === 8) {
             sums[index] = values.reduce((prev, curr) => {
               const value = Number(curr);
               if (!isNaN(value)) {
@@ -235,6 +238,9 @@ export default {
           sums[index] = '';
         }
       });
+      // 格式化数据
+      sums[6] = sums[6].toFixed(3)
+      sums[8] = sums[8].toFixed(2)
       return sums;
     },
     // 获取所有栏目
@@ -312,7 +318,25 @@ export default {
           duration: 1500
         })
       }
-    }
+    },
+    // 导出Excel表格
+    exportExcel() {
+      var wb = XLSX.utils.table_to_book(document.querySelector("#sales"))
+      var wbout = XLSX.write(wb,{
+        bookType: 'xlsx',
+        bookSST: true,
+        type: 'array'
+      })
+      try {
+        FileSaver.saveAs(
+          new Blob([wbout],{ type: "application/octet-stream" }),
+          `${this.tableData[0].date.slice(0,7)}-销售详情.xlsx`
+        )
+      } catch (e) {
+        if (typeof console !== 'undefined') console.log(e,wbout)
+      }
+      return wbout
+    } 
   },
   mounted() {
     this.getAllSalesOrder(this.cid)

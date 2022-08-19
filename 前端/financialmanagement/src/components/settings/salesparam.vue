@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="this.$type == '管理员'">
         <div class="box">
             <span>品种：</span>
             <el-tag :key="tag.id" v-for="tag in salesparams.varietys" closable :disable-transitions="false"
@@ -37,13 +37,16 @@
             </el-button>
         </div>
     </div>
+    <notype v-else></notype>
 
 </template>
 
 <script>
 import paramsApi from '@/api/paramsApi';
+import notype from '@/components/utlis/notype.vue'
 
 export default {
+    components:{ notype },
     data() {
         return {
             salesparams: {

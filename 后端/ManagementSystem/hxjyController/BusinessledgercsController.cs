@@ -3,6 +3,7 @@ using hxjyModel.apiModels;
 using hxjyServices;
 using SqlSugar;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace hxjyController
 {
@@ -11,6 +12,7 @@ namespace hxjyController
     /// </summary>
     [Route("[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class BusinessledgercsController:ControllerBase
     {
         BusinessledgercsService businessledgercsService = new BusinessledgercsService();
@@ -42,6 +44,7 @@ namespace hxjyController
         /// <param name="sid"></param>
         /// <returns></returns>
         [HttpGet]
+                [Authorize]
         public CallBackModels DelSum(int sid)
         {
             return businessledgercsService.DelSum(sid);
@@ -53,6 +56,7 @@ namespace hxjyController
         /// <param name="businessledgercssum"></param>
         /// <returns></returns>
         [HttpPost]
+        [Authorize]
         public int UpdateSum(Businessledgercssum businessledgercssum)
         {
             return businessledgercsService.UpdateSum(businessledgercssum);
@@ -64,6 +68,7 @@ namespace hxjyController
         /// <param name="sid"></param>
         /// <returns></returns>
         [HttpGet]
+        [Authorize]
         public List<Businessledgercs> GetAllLedgercsBySid(int sid)
         {
             return businessledgercsService.GetAllLedgercsBySid(sid);
@@ -75,6 +80,7 @@ namespace hxjyController
         /// <param name="businessledgercs"></param>
         /// <returns></returns>
         [HttpPost]
+        [Authorize]
         public int AddLedgercs(Businessledgercs businessledgercs)
         {
            return businessledgercsService.AddLedgercs(businessledgercs);
@@ -86,6 +92,7 @@ namespace hxjyController
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
+        [Authorize]
         public int DelLedgercs(int id)
         {
             return businessledgercsService.DelLedgercs(id);

@@ -203,11 +203,10 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:hxjyController.AdminController.Login(System.String)">
+        <member name="M:hxjyController.AdminController.Login(System.String,System.String)">
             <summary>
             登录
             </summary>
-            <param name="username"></param>
             <returns></returns>
         </member>
         <member name="M:hxjyController.AdminController.getAdminInfoById(System.Int32)">

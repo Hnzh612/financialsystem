@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div v-if="this.$type == '管理员'">
     <div class="searchmean" style="margin-bottom: 10px;">
       <el-button type="warning" icon="el-icon-check" circle @click="save()">保存</el-button>
       <el-button type="danger" icon="el-icon-delete" circle @click="dedeleteSalesOrder(curid)">删除</el-button>
-      <el-button type="primary" icon="el-icon-upload el-icon--right" circle>导出</el-button>
+      <el-button type="primary" icon="el-icon-upload el-icon--right" circle @click="exportExcel">导出</el-button>
       <el-popover placement="right" width="350" trigger="click" style="margin:0 10px" @hide="add()" v-model="show">
         <div class="inline-block">
           <span class="demonstration">日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期：</span>
@@ -31,7 +31,7 @@
       <el-button type="info" icon="el-icon-arrow-left" circle @click="back()">返回</el-button>
     </div>
     <el-table :data="tableData" style="width: 100%;" :summary-method="getSummaries" show-summary tooltip-effect="dark"
-      @selection-change="handleSelectionChange">
+      @selection-change="handleSelectionChange" id="business">
       <el-table-column type="selection" width="55">
       </el-table-column>
       <el-table-column label="遵义市鑫恒佳耀贸易有限公司业务发生台账" align="center">
@@ -50,15 +50,19 @@
       </el-table-column>
     </el-table>
   </div>
+  <notype v-else></notype>
 </template>
 
 
 <script>
 import pages from '@/components/utlis/pages.vue'
 import businessledgerApi from '@/api/businessledgerApi'
+import FileSaver from 'file-saver'
+import XLSX from 'xlsx'
+import notype from '@/components/utlis/notype.vue'
 
 export default {
-  components: { pages },
+  components: { pages,notype },
   name: 'businessdetail',
   props: ['sid'],
   data() {
@@ -234,7 +238,25 @@ export default {
           duration: 1500
         })
       }
-    }
+    },
+    // 导出Excel表格
+    exportExcel() {
+      var wb = XLSX.utils.table_to_book(document.querySelector("#sales"))
+      var wbout = XLSX.write(wb,{
+        bookType: 'xlsx',
+        bookSST: true,
+        type: 'array'
+      })
+      try {
+        FileSaver.saveAs(
+          new Blob([wbout],{ type: "application/octet-stream" }),
+          "某月业务发生台账详情.xlsx"
+        )
+      } catch (e) {
+        if (typeof console !== 'undefined') console.log(e,wbout)
+      }
+      return wbout
+    } 
   },
   mounted() {
     this.GetAllLedgercs(this.sid)

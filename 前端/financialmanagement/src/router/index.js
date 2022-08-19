@@ -44,4 +44,19 @@ const router = new VueRouter({
   routes
 })
 
+// 全局前置守卫
+router.beforeEach((to,from,next) => {
+  // 获取存储的token
+  const token = localStorage.getItem('token')
+  if(to.path !== '/login') {
+    if(token) {
+      next()
+    } else {
+      next('/login')
+    }
+  } else {
+    next()
+  }
+})
+
 export default router

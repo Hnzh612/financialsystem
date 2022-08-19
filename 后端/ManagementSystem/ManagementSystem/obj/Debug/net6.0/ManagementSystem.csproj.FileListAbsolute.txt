@@ -233,3 +233,4 @@ D:\自己\test\后端\ManagementSystem\ManagementSystem\obj\Debug\net6.0\Managem
 D:\自己\test\后端\ManagementSystem\ManagementSystem\obj\Debug\net6.0\ManagementSystem.pdb
 D:\自己\test\后端\ManagementSystem\ManagementSystem\obj\Debug\net6.0\ManagementSystem.genruntimeconfig.cache
 D:\自己\test\后端\ManagementSystem\ManagementSystem\obj\Debug\net6.0\ref\ManagementSystem.dll
+D:\自己\test\后端\ManagementSystem\ManagementSystem\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

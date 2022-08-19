@@ -2,6 +2,7 @@
 using hxjyModel.apiModels;
 using hxjyModel.dbModels;
 using hxjyServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace hxjyController
@@ -12,6 +13,7 @@ namespace hxjyController
     /// <returns></returns>
     [Route("[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class SalesController:ControllerBase
     {
         SalesService salesservice = new SalesService();

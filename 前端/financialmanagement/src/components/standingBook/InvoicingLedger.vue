@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div  v-if="this.$type == '管理员'">
         <el-popover placement="right" width="600" trigger="click" style="margin:0 10px" @hide="add()" v-model="show">
             <div class="inline-block">
                 <span class="demonstration">年&nbsp;&nbsp;月：</span>
@@ -13,24 +13,24 @@
             <el-button type="success" style="margin-left:20px" circle @click="showoff()">确定</el-button>
             <el-button type="success" icon="el-icon-plus" circle slot="reference">添加</el-button>
         </el-popover>
-        <el-table ref="singleTable" :data="tableData" style="width: 100%">
-            <el-table-column fixed type="index" width="80" label="序号">
+        <el-table ref="singleTable" :data="tableData" style="width: 100%" > 
+            <el-table-column fixed type="index" width="80" label="序号" align="center">
             </el-table-column>
-            <el-table-column prop="date" label="日期" width="150">
+            <el-table-column prop="date" label="日期" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="inweightsum" label="入库数量（合计）" width="150">
+            <el-table-column prop="inweightsum" label="入库数量（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="inamountsum" label="入库金额（合计）" width="150">
+            <el-table-column prop="inamountsum" label="入库金额（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="outweightsum" label="出库数量（合计）" width="150">
+            <el-table-column prop="outweightsum" label="出库数量（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="outamountsum" label="出库金额（合计）" width="150">
+            <el-table-column prop="outamountsum" label="出库金额（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="leftweightsum" label="结存数量（合计）" width="150">
+            <el-table-column prop="leftweightsum" label="结存数量（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="leftamountsum" label="结存金额（合计）" width="150">
+            <el-table-column prop="leftamountsum" label="结存金额（合计）" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="remark" label="备注" width="200">
+            <el-table-column prop="remark" label="备注" width="200" align="center">
             </el-table-column>
             <el-table-column fixed="right" label="操作">
                 <template slot-scope="scope">
@@ -57,15 +57,18 @@
             @handleCurrentChangeSub="handleCurrentChangeFun">
             ></pages>
     </div>
+    <notype v-else></notype>
 </template>
 
 <script>
 import invoicingApi from '@/api/invoicingApi'
 import pages from '../utlis/pages.vue';
+import notype from '@/components/utlis/notype.vue'
 
 export default {
     components: {
-        pages
+        pages,
+        notype
     },
     methods: {
         // 页码点击

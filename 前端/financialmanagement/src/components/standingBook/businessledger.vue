@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="this.$type == '管理员'">
         <el-popover placement="right" width="600" trigger="click" style="margin:0 10px" @hide="add()" v-model="show">
             <div class="inline-block">
                 <span class="demonstration">年&nbsp;&nbsp;月：</span>
@@ -14,17 +14,17 @@
             <el-button type="success" icon="el-icon-plus" circle slot="reference">添加</el-button>
         </el-popover>
         <el-table ref="singleTable" :data="tableData" style="width: 100%">
-            <el-table-column fixed type="index" width="80" label="序号">
+            <el-table-column fixed type="index" width="80" label="序号" align="center">
             </el-table-column>
-            <el-table-column prop="date" label="日期" width="150">
+            <el-table-column prop="date" label="日期" width="150" align="center">
             </el-table-column>
-            <el-table-column prop="incoinsum" label="进帐（合计）" width="120">
+            <el-table-column prop="incoinsum" label="进帐（合计）" width="120" align="center">
             </el-table-column>
-            <el-table-column prop="outcoinsum" label="出账（合计）" width="120">
+            <el-table-column prop="outcoinsum" label="出账（合计）" width="120" align="center">
             </el-table-column>
-            <el-table-column prop="surplus" label="余额" width="120">
+            <el-table-column prop="surplus" label="余额" width="120" align="center">
             </el-table-column>
-            <el-table-column prop="remark" label="备注" width="200">
+            <el-table-column prop="remark" label="备注" width="200" align="center">
             </el-table-column>
             <el-table-column fixed="right" label="操作">
                 <template slot-scope="scope">
@@ -51,15 +51,18 @@
             @handleCurrentChangeSub="handleCurrentChangeFun">
             ></pages>
     </div>
+    <notype v-else></notype>
 </template>
 
 <script>
 import businessledgerApi from '@/api/businessledgerApi'
 import pages from '../utlis/pages.vue';
+import notype from '@/components/utlis/notype.vue'
 
 export default {
     components: {
-        pages
+        pages,
+        notype
     },
     methods: {
         // 页码点击
@@ -191,6 +194,7 @@ export default {
     },
     created() {
         this.GetAllSum(this.page)
+            console.log(this)
     }
 
 }
